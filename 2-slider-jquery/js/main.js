@@ -78,7 +78,7 @@ $(function () {
     });
 
     $(".prev-slide").click(function () {
-        ptev();
+        prev();
     });
 
 
