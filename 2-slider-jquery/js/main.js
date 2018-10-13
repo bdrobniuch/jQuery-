@@ -62,12 +62,12 @@ $(function () {
 
     function update() {
         enable = false;
-        $(".slide-caption").fadeOut(0);
+        $(".slide-caption").eq(slideIndex).fadeOut(0);
         slideShow.animate({
             left: (-slideIndex * 100) + "%"
         }, 1000, function () {
 
-            $(".slide-caption").fadeIn(200);
+            $(".slide-caption").eq(slideIndex).fadeIn(1000);
             enable = true;
         });
     }
